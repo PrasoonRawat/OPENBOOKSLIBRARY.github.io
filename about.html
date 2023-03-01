@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+
+    <header>
+      <a href="#" class="logo">THE LIBRARY</a>
+      <ul class="navigation">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Book.html">BOOKS</a></li>
+          <li><a href="about.html" class="active">ABOUT</a></li>
+      </ul>
+
+
+  </header>
+  
+
+
+    <section class="sec-01">
+      <div class="container">
+        <h2 class="main-title">BOOKS ON YOUR FINGER TIPS</h2>
+        <div class="content">
+          <div class="image">
+            <img src="lib.jpg" alt="">
+          </div>
+          <div class="text-box">
+            <h3>THE LIBRARY</h3>
+            <p>
+                the library providdes you with all (most) amazing books avaialable online all at one place
+                you dont have to search for seperate books on the internet when you can get them all in one place,
+                in case we are missing any book that you are intertested in reading and it is npt availabale on the website
+                feel free to mail us.
+            </div>
+        </div>
+        <!--<div class="media-icons">
+          <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+        </div>-->
+        </div>
+    </section>
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">WHY US!</h3>
+        <div class="content">
+          <div class="image">
+            <img src="book.jpg" alt="">
+          </div>
+          <div class="info">
+            <h4 class="info-title">Description</h4>
+            <p>
+                we tend to provide you with feeds and in return we only need your support by reading it, 
+                your interest is our mission to complete. we are team of few so it might take a bit time to
+                come with a solution to the problem, if any! but we are always looking forward to improve 
+                your experience and helping you get the most out of this website.
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-03">
+      <div class="container">
+        <h3 class="section-title">FOLLOW US ON</h3>
+        <div class="content">
+          <div class="media-info">
+            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <!--<li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>-->
+            <li><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+          </div>
+          <div class="image">
+            <img src="boo.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      //common reveal options to create reveal animations
+      ScrollReveal({
+        //reset: true,
+        distance: '100px',
+        duration: 2500,
+        delay: 100
+      });
+
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.main-title, .section-title', { delay: 10, origin: 'left' });
+      ScrollReveal().reveal('.sec-01 .image, .info', { delay: 10, origin: 'bottom' });
+      ScrollReveal().reveal('.text-box', { delay: 10, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', { delay: 10, origin: 'bottom', interval: 10 });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 10, origin: 'top' });
+      ScrollReveal().reveal('.media-info li', { delay: 10, origin: 'left', interval: 10 });
+    </script>
+
+  </body>
+</html>
+      

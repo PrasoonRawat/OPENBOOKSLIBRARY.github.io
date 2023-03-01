@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+    <title>
+        Login
+    </title>    
+</head>
+<body>
+    <link rel="stylesheet" href="web.css"> 
+    <div class="form">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Login</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="user name" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>Remeber Password</span>
+            <button type="Submit" class="Submit-btn">Log in</button>
+        </form>
+        <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="user name" required>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>I agree to the terms and conditiom</span>
+            <button type="Submit" class="Submit-btn">Register</button>
+        </form>
+    </div>
+   
+    </div>
+    <script src="anim.js"></script>
+    
+</body>
+</html>

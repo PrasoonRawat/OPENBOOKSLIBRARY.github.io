@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Category Filter in JS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">THE LIBRARY</a>
+            <ul class="navigation">
+                <li><a href="index.html" >HOME</a></li>
+                <li><a href="book.html" class="active">BOOKS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="login.html" class="button"><ion-icon name="person-add"></ion-icon>Click To Login</a></li>
+            </ul>
+        </header>
+        
+        <div class = "main-container">
+            <h2>WELCOME!</h2>
+            <p>FEEL FREE TO READ ANY TYPE OF BOOKS YOU FIND OVER HEAER FOR FREE</p>
+            <div class = "filter-container">
+                <div class = "category-head">
+                    <ul class="nav">
+                        <div class = "category-title active" id = "all">
+                            <li>All</li>
+                            <!-- <span><ion-icon name="albums"></ion-icon></span> -->
+                        </div>
+                        <div class = "category-title" id = "Children-literature">
+                            <li>Children's Literature</li>
+                            <!-- <span><ion-icon name="journal"></ion-icon></span> -->
+                        </div>
+                        <div class = "category-title" id = "educational">
+                            <li>Educational</li>
+                            <!-- <span><ion-icon name="paper"></ion-icon></span> -->
+                        </div>
+                        <div class = "category-title" id = "Mystery">
+                            <li>Mystery</li>
+                            <!-- <span><ion-icon name="cash"></ion-icon></span> -->
+                        </div>
+                        <div class = "category-title" id = "Auto-Biography">
+                            <li>Auto-Biography</li>
+                            <!-- <span><ion-icon name="pencil-outline"></ion-icon></span> -->
+                        </div>
+                        <div class = "category-title" id = "self-help">
+                            <li>Self-help</li>
+                            <!-- <span><ion-icon name="ribbon"></ion-icon></span> -->
+                        </div>
+                    </ul>
+                </div>
+
+
+
+                <div class = "posts-collect">
+                    <div class = "posts-main-container">
+                        <!-- single post -->
+                        
+                        <div class = "all Auto-Biography">
+                            <div class = "post-img">
+                                <img src = "becoming.webp" alt = "post">
+                                <span class = "category-name">Auto-Biography</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>13 Novenber, 2018</span>
+                                    <span>
+                                        <ion-icon name="star"></ion-icon>4.5
+                                    </span>
+                                </div>
+                                <h2>Becoming by Michelle Obama
+                                </h2>
+                                <p>Described by the author as a deeply personal experience, the book talks about her roots and how 
+                                    she found her voice, as well as her time in the White House, her public health campaign, and her 
+                                    role as a mother. The book is published by Crown and was released in 24 languages.</p>
+                            </div>
+                            <button type = "button" class = "read-btn">READ</button>
+                        </div>
+                        
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all Children-literature">
+                            <div class = "post-img">
+                                <img src = "black-beauty-ANNA-SEWELL.jpg" alt = "post">
+                                <span class = "category-name">Children's literature</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>Novenber 27, 2020</span>
+                                    <span>
+                                        <ion-icon name="star"></ion-icon>4.1
+                                    </span>
+                                </div>
+                                <h2>BLACK BEAUTY</h2>
+                                <p>Black Beauty, a handsome well-born, well-bred horse of the era before automobiles, narrates the story. He is initially owned by kind masters but is sold to successively crueler owners. Eventually he collapses from overwork and ill treatment, but in the end he is sold to another kind owner and recovers.</p>
+                            </div>
+                            <button type = "button" class = "read-btn">READ</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all Auto-Biography">
+                            <div class = "post-img">
+                                <img src = "the-diary-of-a-young-girl.webp" alt = "post">
+                                <span class = "category-name">Auto-Biography</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>12 June, 1942</span>
+                                    <span>
+                                        <ion-icon name="star"></ion-icon>4.6
+                                    </span>
+                                </div>
+                                <h2>THE DIARY OF A YOUNG GIRL</h2>
+                                <p>The Diary of a Young Girl, also known as The Diary of Anne Frank, journal by Anne Frank, a Jewish teenager who chronicled her family's two years (1942–44) in hiding during the German occupation of the Netherlands during World War II.</p>
+                            </div>
+                            <button type = "button" class = "read-btn">READ</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all Auto-Biography">
+                            <div class = "post-img">
+                                <img src = "wingsoffire.jpeg" alt = "post">
+                                <span class = "category-name">Auto-Biography</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>1999</span>
+                                    <span>
+                                        <ion-icon name="star"></ion-icon>4.8
+                                    </span>
+                                </div>
+                                <h2>WINGS OF FIRE BY APJ ABDUL KALAM</h2>
+                                <p>A. P. J. Abdul Kalam. It was written by him and Arun Tiwari. In the autobiography, Kalam examines his early life, effort, hardship, fortitude, luck and chance that eventually led him to lead Indian space research, nuclear and missile programs.</p>
+                            </div>
+                            <button type = "button" class = "read-btn">READ</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all Children-literature">
+                            <div class = "post-img">
+                                <img src = "thelionthewitchandthewardrobe.jpg" alt = "post">
+                                <span class = "category-name">Children's literature</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>October 16, 1950</span>
+                                    <span>
+                                        <ion-icon name="star"></ion-icon>4.5
+                                    </span>
+                                </div>
+                                <h2>The Lion, The Witch And The Wardrobe </h2>
+                                <p>Plot. Peter, Susan, Edmund and Lucy Pevensie are evacuated from London in 1940, to escape the Blitz, and sent to live with Professor Digory Kirke at a large house in the English countryside. While exploring the house, Lucy enters a wardrobe and discovers the magical world of Narnia.</p>
+                            </div>
+                            <button type = "button" class = "read-btn">READ</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all Children-literature">
+                            <div class = "post-img">
+                                <img src = "therailwaychildren.jpg" alt = "post">
+                                <span class = "category-name">Children's literature</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>1906</span>
+                                    <span>
+                                        <ion-icon name="star"></ion-icon>4.3
+                                    </span>
+                                </div>
+                                <h2>THE RAILWAY CHILDREN</h2>
+                                <p>Now nearly 100 years old, this story centres on the lives of three children whose comfortable, middle-class existence ends when their father has to go away unexpectedly. Roberta, Peter and Phyllis leave their London home and move with their mother to a small cottage in the country where life is very different.</p>
+                            </div>
+                            <button type = "button" class = "read-btn">READ</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all Children-literature">
+                            <div class = "post-img">
+                                <img src = "Alice'sadventureinwonderland.jpg" alt = "post">
+                                <span class = "category-name">Children's literature</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>Novenber, 1865</span>
+                                    <span>
+                                        <ion-icon name="star"></ion-icon>4.5
+                                    </span>
+                                </div>
+                                <h2>Alice's Adventure In Wonderland</h2>
+                                <p>Alice's Adventures in Wonderland by Lewis Carroll is a story about Alice who falls down a rabbit hole and lands into a fantasy world that is full of weird, wonderful people and animals. It is classic children's book that is also popular with adults. Personally, at 16, I found the book strange and uninteresting.</p>
+                            </div>
+                            <button type = "button" class = "read-btn">READ</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all Mystery">
+                            <div class = "post-img">
+                                <img src = "gonegirlbybillianflyn.jpg" alt = "post">
+                                <span class = "category-name">Mystery</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>24 May, 2012</span>
+                                    <span>
+                                        <ion-icon name="star"></ion-icon>4.3
+                                    </span>
+                                </div>
+                                <h2>Gone Girl By Gillian Flynn</h2>
+                                <p>Gone Girl is a 2012 crime thriller novel by American writer Gillian Flynn. It was published by Crown Publishing Group in June 2012. The novel was popular and made the New York Times Best Seller list. The sense of suspense in the novel comes from whether Nick Dunne is responsible for the disappearance of his wife Amy.</p>
+                            </div>
+                            <button type = "button" class = "read-btn">READ</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all Mystery">
+                            <div class = "post-img">
+                                <img src = "thesilentpatient.webp" alt = "post">
+                                <span class = "category-name">Mystery</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>5 February, 2019</span>
+                                    <span>
+                                        <ion-icon name="star"></ion-icon>4.7
+                                    </span>
+                                </div>
+                                <h2>The Silent Patient</h2>
+                                <p>The Silent Patient is a shocking psychological thriller of a woman's act of violence against her husband—and of the therapist obsessed with uncovering her motive. Alicia Berenson's life is seemingly perfect.</p>
+                            </div>
+                            <button type = "button" class = "read-btn">READ</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all Mystery">
+                            <div class = "post-img">
+                                <img src = "theguestlist.jpeg" alt = "post">
+                                <span class = "category-name">Mystery</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>20 February, 2020</span>
+                                    <span>
+                                        <ion-icon name="star"></ion-icon>3.7
+                                    </span>
+                                </div>
+                                <h2>The Guest List by Lucy Foley</h2>
+                                <p>The Guest List—set at a ritzy wedding-gone-wrong on a remote Scottish isle—starts with a murder, and then plays a game of keep-away with the victim's identity until the very last pages. This juicy murder mystery is a perfect Agatha Christie–esque summer read.</p>
+                            </div>
+                            <button type = "button" class = "read-btn">READ</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all educational">
+                            <div class = "post-img">
+                                <img src = "thehauntingofhillhouse.jpg" alt = "post">
+                                <span class = "category-name">Horror</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <ion-icon name="star"></ion-icon>4.3
+                                    </span>
+                                </div>
+                                <h2>The Haunting Of Hill House</h2>
+                                <p>The plot alternates between two timelines, following five adult siblings whose paranormal experiences at Hill House continue to haunt them in the present day, and flashbacks depicting events leading up to the eventful night in 1992 when the family fled from the mansion.</p>
+                            </div>
+                            <button type = "button" class = "read-btn">READ</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all educational">
+                            <div class = "post-img">
+                                <img src = "houseofleaves.webp" alt = "post">
+                                <span class = "category-name">Horror</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>7 March, 2000</span>
+                                    <span>
+                                        <ion-icon name="star"></ion-icon>4.6
+                                    </span>
+                                </div>
+                                <h2>House Of Leaves</h2>
+                                <p>The plot is centered on a fictional documentary about a family whose house contains a seemingly endless labyrinth. The format and structure of House of Leaves is unconventional, with unusual page layout and style, making it a prime example of ergodic literature.</p>
+                            </div>
+                            <button type = "button" class = "read-btn">READ</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all educational">
+                            <div class = "post-img">
+                                <img src = "IT.avif" alt = "post">
+                                <span class = "category-name">Horror</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>15 September, 1986</span>
+                                    <span>
+                                        <ion-icon name="star"></ion-icon>4.7
+                                    </span>
+                                </div>
+                                <h2>IT by Stephen King</h2>
+                                <p>The story follows the experiences of seven children as they are terrorized by an evil entity that exploits the fears of its victims to disguise itself while hunting its prey. "It" primarily appears in the form of Pennywise the Dancing Clown to attract its preferred prey of young children.</p>
+                            </div>
+                            <button type = "button" class = "read-btn">READ</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all educational">
+                            <div class = "post-img">
+                                <img src = "theheadfullofghosts.jpg" alt = "post">
+                                <span class = "category-name">Horror</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>June 2, 2015</span>
+                                    <span>
+                                        <ion-icon name="star"></ion-icon>4.2
+                                    </span>
+                                </div>
+                                <h2>The Head Full Of Ghost</h2>
+                                <p>A Head Full of Ghosts is the fourth horror novel by American writer Paul G. Tremblay. The plot involves an American family from Massachusetts under financial and emotional strain when their fourteen-year-old daughter, Marjorie Barrett, exhibits signs of severe mental illness.</p>
+                            </div>
+                            <button type = "button" class = "read-btn">READ</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all self-help">
+                            <div class = "post-img">
+                                <img src = "tuesday-with-morrie.jpg" alt = "post">
+                                <span class = "category-name">self-help</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>1997</span>
+                                    <span>
+                                        <ion-icon name="star"></ion-icon>4.8
+                                    </span>
+                                </div>
+                                <h2>TUESDAYS WITH MORRIE</h2>
+                                <p>Tuesdays with Morrie is a memoir by American author Mitch Albom about a series of visits Albom made to his former sociology professor Morrie Schwartz, as Schwartz gradually dies of ALS.</p>
+                            </div>
+                            <button type = "button" class = "read-btn">READ</button>
+                        </div>
+                        <!-- end of the post -->
+                        <!-- start of the next post -->
+                        <div class = "all self-help">
+                            <div class = "post-img">
+                                <img src = "alone-in-the-crowd.jpg" alt = "post">
+                                <span class = "category-name">self-help</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>5 December 2021</span>
+                                    <span>
+                                        <ion-icon name="star"></ion-icon>4.0
+                                    </span>
+                                </div>
+                                <h2>ALONE IN THE CROWD: OVERCOMING LONLINESS OF URBAN LIVING</h2>
+                                <p>In Alone in the Crowd, the authors go beyond highlighting the existence of the problem to enlisting ways in which this pandemic, in the midst of the current pandemic, can be tackled. Encouraging readers to concurrently focus on the need to live mindfully, this book also highlights key learnings from the pandemic.</p>
+                            </div>
+                            <button type = "button" class = "read-btn">READ</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all self-help">
+                            <div class = "post-img">
+                                <img src = "happiness unlimited-awaking with brahmakumari.webp" alt = "post">
+                                <span class = "category-name">self-help</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>2019</span>
+                                    <span>
+                                        <ion-icon name="star"></ion-icon>4.6
+                                    </span>
+                                </div>
+                                <h2>HAPPINESS UNLIMITED-AWAKING WITH BRAHMAKUMARIS</h2>
+                                <p>In these enlightening and eye-opening conversations, the renowned spiritual mentor, Sister BK Shivani reveals how to create a life of joy, contentment and bliss, because we all have the choice and the power to do so. According to her, the reason why there is so little happiness in the world is dependency. </p>
+                            </div>
+                            <button type = "button" class = "read-btn">READ</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+
+                        <div class = "all self-help">
+                            <div class = "post-img">
+                                <img src = "the-power-of-subconsious-mind.jpg" alt = "post">
+                                <span class = "category-name">self-help</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>1963</span>
+                                    <span>
+                                        <ion-icon name="star"></ion-icon>4.7
+                                    </span>
+                                </div>
+                                <h2>THE POWER OF SUBCONSIOUS MIND</h2>
+                                <p>The Power Of Your Subconscious Mind is a spiritual self-help classic, which teaches you how to use visualization and other suggestion techniques to adapt your unconscious behavior in positive ways</p>
+                            </div>
+                            <button type = "button" class = "read-btn">READ</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single 0post -->
+                        <div class = "all self-help">
+                            <div class = "post-img">
+                                <img src = "you-can-win.jpg" alt = "post">
+                                <span class = "category-name">self-help</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>1998</span>
+                                    <span>
+                                        <ion-icon name="star"></ion-icon>4.8
+                                    </span>
+                                </div>
+                                <h2>YOU CAN WIN</h2>
+                                <p>You Can Win Summary motivates people and take things right from your daily life and turns them into positive thrust. This book is for those who pursue balanced personality and who want to move towards success with positivity. This is easy to read a self-help book.</p>
+                            </div>
+                            <button type = "button" class = "read-btn">READ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- JS file -->
+        <div class="iss" id="av-orbit">
+            <script>
+                var avOrbitProperties = {
+                    size: 'medium',
+                    lang: 'en'
+                };
+            </script>
+            <script src="https://astroviewer.net/widgets/widgets/orbit.js"></script>
+        </div>
+        <script src = "script.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </body>
+</html>
